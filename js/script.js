@@ -1,4 +1,4 @@
-let money = prompt("Ваш бюджет на месяц?", "10 000 руб"),
+let money = prompt("Ваш бюджет на месяц?", ""),
     time = prompt("Введите дату в формате YYYY-MM-DD", "");
 
 let reqCosts = prompt("Введите обязательную статью расходов в этом месяце", ""),
@@ -8,11 +8,15 @@ let appData = {
     budget: money,
     timeData: time,
     expenses: {
-        reqCosts: price
-    }
+        costs: reqCosts,
+        howMany: price
+    },
+    optionalExpenses: {},
+    income: [],
+    savings: false
 };
 
-let budgetForOneDay = reqCosts / 30; 
+let budgetForOneDay = appData.budget / 30; 
 
 alert(budgetForOneDay + " рублей в день");
 console.log(appData);
