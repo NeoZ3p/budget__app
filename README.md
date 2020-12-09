@@ -1,1 +1,1 @@
-# BeOnMax course
+# Here I'm learning JS
