@@ -1,1 +1,1 @@
-# Here I learn JS
+# https://neoz3p.github.io/budget__app/
